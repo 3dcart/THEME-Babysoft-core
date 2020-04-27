@@ -1,0 +1,61 @@
+<!--START: LEFT_BAR_BLOCKS-->
+<nav id="categories-outer" class="sidebar-widget">
+	<h4 class="widget-header">[frame_categories]</h4>
+	<div class="widget-body">
+		<!--START: FRAME_CATEGORY-->
+		<ul id="categories" class="sidebarUL">
+			<!--START: CATEGORIES-->
+			<li class="[dropdown_class]">
+				<!--START: CATEGORY_FORMAT-->
+				<a href="view_category.asp?cat=CATID">CATEGORY</a>
+				<!--END: CATEGORY_FORMAT-->
+				<!--START: SUB_CATEGORIES-->
+				<ul class="dropdown-menu">
+					<!--START: SUB_CATEGORY_FORMAT-->
+					<li class=""><a href="view_category.asp?cat=CATID" class="subcat">CATEGORY</a></li>
+					<!--END: SUB_CATEGORY_FORMAT-->
+				</ul>
+				<!--END: SUB_CATEGORIES-->
+			</li>
+			<!--END: CATEGORIES-->
+		</ul>
+		<!--END: FRAME_CATEGORY-->
+	</div>
+</nav>
+
+<!--START: FRAME_BYPRICE-->
+<div id="modPrice" class="sidebar-widget">
+	<h4 class="widget-header">[frame_byprice]</h4>
+	<div class="widget-body">
+		<ul class="sidebarUL">
+			<!--START: byprice_format-->
+			<li><a href="search_groups.asp?keyword=[id]&byprice=[id]">[title]</a></li>
+			<!--END: byprice_format-->
+		</ul>
+	</div>
+</div>
+<!--END: FRAME_BYPRICE-->
+
+<!--START: FRAME_MANUFACTURER-->
+<div id="modManufacturer" class="sidebar-widget">
+	<h4 class="widget-header">[frame_manufacturer]</h4>
+	<div class="widget-body">
+		<form name="mfg" id="mfg" method="get" action="search_groups.asp">
+			<div class="manf-select">
+				<select name="manf" onchange="this.form.submit();" class="form-control">
+					<option value="0" selected="selected">[frame_manufacturer]</option>
+					<!--START: manufacturer_format-->
+					<option value="[mfgid]">[manufacturer]</option>
+					<!--END: manufacturer_format-->
+				</select>
+			</div>
+		</form>
+	</div>
+</div>
+<!--END: FRAME_MANUFACTURER-->
+
+<!--START: LEFT_BANNER-->
+<div id="leftBanner" class="sidebar-widget">[LEFT_BANNER]</div>
+<!--END: LEFT_BANNER--> 
+
+<!--END: LEFT_BAR_BLOCKS-->
