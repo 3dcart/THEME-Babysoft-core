@@ -18,7 +18,18 @@ min-height: 100vh;
 footer {
   flex-shrink: 0;
 }
-
+.homepage-blog-posts .post-image-container img {
+    height: 200px;
+}
+.product-items.productList .product-item .img a {
+    position: initial;
+}
+.product-items.productList .product-item .img {
+    border: 1px solid #ececec;
+}
+.product-items.productList .product-item .product-content {
+    text-align: left;
+}
 body {
 	font-family: 'Open Sans', sans-serif;
 	font-family: 'Hind', sans-serif;
