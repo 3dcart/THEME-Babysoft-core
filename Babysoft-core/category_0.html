@@ -1,8 +1,8 @@
 <section id="category" class="category-page-content page-content">
 
 	<!--START: BODY_HEADER-->
-	<section class="breadcrumnb">
-		<ol itemscope="" itemtype="http://schema.org/BreadcrumbList" class="clearfix">
+	<section class="breadcrumnb" aria-label="itemsgrid" role="main">
+		<ol itemscope="" itemtype="http://schema.org/BreadcrumbList" class="clearfix" role="navigation" aria-label="breadcrumbs">
 			[breadcrumb_items]
 		</ol>
 	</section>
@@ -56,14 +56,14 @@
 				<div class="col-sm-6 clearfix">
 					<!--START: category_view_switch-->
 					<div class="view-as-btn">
-						<a href="javascript:void(0);" id="grid-view" title="Grid View" class="current-view">
+						<a href="javascript:void(0);" id="grid-view" title="Grid View" class="current-view" aria-label="Grid view button" role="button">
 							<div>
 								<div class="icon-bar"></div>
 								<div class="icon-bar"></div>
 								<div class="icon-bar"></div>
 							</div>
 						</a>
-						<a href="javascript:void(0);" id="list-view" title="List View" class="">
+						<a href="javascript:void(0);" id="list-view" title="List View" class="" aria-label="List view button" role="button">
 							<div>
 								<div class="icon-bar"></div>
 								<div class="icon-bar"></div>
@@ -225,7 +225,7 @@
 							<span class="regular-price">[ITEMPRICE]</span>
 							<!--END: ITEMPRICE-->
 							<!--START: SALEPRICE-->
-							<del class="regular-price">[ITEMPRICE]</del>
+							<del class="regular-price" aria-label="regular price">[ITEMPRICE]</del>
 							<span class="sale-price">[ITEMSALEPRICE]</span>
 							<span class="on-sale-badge">[product_sale]</span>
 							<!--END: SALEPRICE-->
@@ -267,7 +267,7 @@
 							<span class="regular-price">[ITEMPRICE]</span>
 							<!--END: ITEMPRICE-->
 							<!--START: SALEPRICE-->
-							<del class="regular-price">[ITEMPRICE]</del>
+							<del class="regular-price" aria-label="regular price">[ITEMPRICE]</del>
 							<span class="sale-price">[ITEMSALEPRICE]</span>
 							<span class="on-sale-badge">[product_sale]</span>
 							<!--END: SALEPRICE-->
@@ -359,7 +359,7 @@
     					<span class="regular-price">[ITEMPRICE]</span>
     					<!--END: ITEMPRICE-->
     					<!--START: SALEPRICE-->
-    					<del class="regular-price">[ITEMPRICE]</del>
+    					<del class="regular-price" aria-label="regular price">[ITEMPRICE]</del>
     					<span class="sale-price">[ITEMSALEPRICE]</span>
     					<span class="on-sale-badge">[product_sale]</span>
     					<!--END: SALEPRICE-->

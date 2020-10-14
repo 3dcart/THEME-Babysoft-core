@@ -30,6 +30,7 @@ footer {
 .product-items.productList .product-item .product-content {
     text-align: left;
 }
+
 body {
 	font-family: 'Open Sans', sans-serif;
 	font-family: 'Hind', sans-serif;
@@ -49,6 +50,22 @@ body:not('.checkout-1') {
 }
 .modal {
 	z-index: 10500000000;
+}
+#skip a
+{
+position:absolute;
+left:-10000px;
+top:auto;
+width:1px;
+height:1px;
+overflow:hidden;
+}
+ 
+#skip a:focus
+{
+position:static;
+width:auto;
+height:auto;
 }
 img {
     max-width: 100%;
@@ -1337,7 +1354,7 @@ ul.extrapages li a {
 .mailist-box form{
     margin:auto;
 }
-.mailist-box h3 {
+.mailist-box h2 {
 	font-size: 20px;
 
 	line-height: 20px;
@@ -1800,7 +1817,7 @@ span.freeshipping {
 	}
 }
 
-.products-section h2 {
+.products-section h1 {
 	display: block;
 	background: none;
 	text-align: center;
@@ -1814,10 +1831,10 @@ span.freeshipping {
 	margin: 0 0 20px;
 	position: relative;
 }
-    .products-section h2 span{
+    .products-section h1 span{
     }
 @media(max-width: 991px) {
-	.products-section h2 {
+	.products-section h1 {
 		font-size: 36px;
 	}
 }
@@ -2072,11 +2089,11 @@ span.freeshipping {
         left: 0;
         max-height: 98%;
     }
-    .products-section h2, .home-page-content .category-header h3 {
+    .products-section h1, .home-page-content .category-header h3 {
         font-size: 24px;
 		margin-bottom: 15px;
     }
-    .products-section h2 span, .home-page-content .category-header h3 span{
+    .products-section h1 span, .home-page-content .category-header h3 span{
     }
     .searchBox {
         padding: 20px 0 0;

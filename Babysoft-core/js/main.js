@@ -128,14 +128,17 @@ function mailinglist_response(form, response) {
     if (response == 1 || response == 3) {
         jQuery('#mailinglist-response .mailinglist-subscribed').removeClass('hidden');
         jQuery('#mailinglist-response').slideDown(300);
+		jQuery('.mailinglist-input').attr( 'aria-invalid', 'false');
     }
     else if (response == -1) {
         jQuery('#mailinglist-response .mailinglist-unsubscribed').removeClass('hidden');
         jQuery('#mailinglist-response').slideDown(300);
+		jQuery('.mailinglist-input').attr( 'aria-invalid', 'false');
     }
     else if (response == 2) {
         jQuery('#mailinglist-response .mailinglist-error').removeClass('hidden');
         jQuery('#mailinglist-response').slideDown(300);
+		jQuery('.mailinglist-input').attr( 'aria-invalid', 'true');
     }
 
     jQuery(form).find('#mailing-btn-txt').removeClass('hidden');
@@ -165,7 +168,19 @@ function moveMenu() {
     }
 */
 }
+jQuery(function () { 
+	jQuery('#categories .dropdown > a').attr("aria-expanded","false");
+	jQuery('#categories .dropdown > a').attr("aria-haspopup","true");
+    jQuery('#categories .dropdown > a').hover(function (e) {
+        var menuItem = jQuery( e.currentTarget );
 
+        if (menuItem.attr( 'aria-expanded') === 'true') {
+            jQuery(this).attr( 'aria-expanded', 'false');
+        } else {
+            jQuery(this).attr( 'aria-expanded', 'true');
+        }
+    });
+});
 jQuery(document).ready(function () {
 
     update_flyoutcart();
