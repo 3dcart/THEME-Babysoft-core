@@ -219,6 +219,13 @@ jQuery(document).ready(function () {
     	});
     }
 	
+	if (respWidth < 767) {
+
+    	jQuery('#categories a').click(function () {
+    		location.href = this.href;
+    	});
+    }
+	
 });
 
 jQuery(function () {
