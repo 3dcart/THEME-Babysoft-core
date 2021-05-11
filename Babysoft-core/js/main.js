@@ -219,13 +219,6 @@ jQuery(document).ready(function () {
     	});
     }
 	
-	if (respWidth < 767) {
-
-    	jQuery('#categories a').click(function () {
-    		location.href = this.href;
-    	});
-    }
-	
 });
 
 jQuery(function () {
@@ -415,8 +408,8 @@ jQuery(function () {
 		for (i = 0, len = dropdowns.length; i < len; ++i) {
 			element = dropdowns[i];
 			element.dataNoclick = false;
-			element.addEventListener("touchstart", menuTouch, false);
-			element.addEventListener("click", menuClick, false);
+			element.addEventListener("touchstart", menuTouch, {passive: true});
+			element.addEventListener("click", menuClick, {passive: true});
 		}
 	}
 
