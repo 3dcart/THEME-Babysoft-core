@@ -310,7 +310,6 @@ div.qaLink a {
 }
 
 #listing .short-description, #listing .product-id, #listing .extrafieldsBlock {
-	display: none;
 }
 /* end listing */
 
