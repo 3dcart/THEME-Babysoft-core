@@ -5,12 +5,17 @@
 /*
 font-family: 'Hind', sans-serif;
 */
-
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Open+Sans:wght@400;600;700&display=swap');
 body {
   display: flex;
   height: 100%;
   flex-direction: column;
 min-height: 100vh;
+}
+@media (max-width: 767px) {
+	.antiCls-xs { 
+		visibility: hidden; 
+	}
 }
 .page-content,.grid-holder {
   flex: 1 0 auto;
