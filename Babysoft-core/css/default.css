@@ -20,6 +20,7 @@ min-height: 100vh;
 .page-content,.grid-holder {
   flex: 1 0 auto;
 }
+#mobSearch{display:none !important}
 footer {
   flex-shrink: 0;
 }
